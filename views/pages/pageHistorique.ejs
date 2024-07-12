@@ -1,0 +1,31 @@
+<%- include ("../partials/head") %>
+<div id="main-bloc">
+    <div id="bloc-connexion">
+        <div><h1>Ce que vous avez fais ces dernieres heures...</h1></div>
+        <p>Cliquez sur le QR code pour le télécharger</p>
+    </div>
+    <div>
+        <!-- Pour chaque élément contenue dans le tableau des historiques -->
+        <% for (let hist in historiqueUrl) { %>
+            <!-- Je crée une variable pour iterer sur la boucle -->
+            <% let i = 0 %>
+            <div class ="blocHistorique"> 
+                <ul>
+                    <li><p>URL Long : <%= historiqueUrl[i].urlLong %></p></li>
+                    <li><p>URL Court : <%= historiqueUrl[i].urlCourt %></p></li>
+                    <li>
+                        <h3>QR code</h3>
+                        <a href="<%= historiqueUrl[i].qrCode %>"  download>
+                            <img src="<%= historiqueUrl[i].qrCode %>" alt="QR code du lien" class="qrCode">
+                        </a>
+                    </li>
+                    <li><p>Date de Créqtion: <%= historiqueUrl[i].urlDate %></p></li>
+                    <li><p>Nombre des clics<%= historiqueUrl[i].nbClic %> fois</p></li>
+                </ul>
+            </div>
+            <!-- J’incremente la variable i -->
+            <% i++ %>
+        <% } %>
+    </div>   
+</div>
+<%- include ("../partials/footer") %>

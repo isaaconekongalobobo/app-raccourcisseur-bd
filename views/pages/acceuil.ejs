@@ -1,0 +1,22 @@
+<%- include ("../partials/head") %>
+<div id="main-bloc">
+    <div class ="bloc-presentation">
+        <h1>Les URLs font des <span> <strong>kilometres?</strong></span></h1>
+        <h4>Et bien, raccourcissez-les grace a cet application...</h4>
+        <a href="/inscription" id="btn-connexion">Créer un compte</a>
+    </div>
+    <div id="bloc-formulaire">
+        <form method="post" id="formUrl">
+            <div class="bloc-champs">
+                <div><label for="urlLong">Entrez l’URL ici</label></div>
+                <input type="url" name="urlLong" id="urlLong" required>
+            </div>
+            <div>
+                <input type="submit" value="Raccourcir">    
+            </div>
+        </form>
+    </div>    
+</div>
+
+
+<%- include ("../partials/footer") %>

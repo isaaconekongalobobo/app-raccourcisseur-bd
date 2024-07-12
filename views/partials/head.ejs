@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccourcisseur des URLs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
+a:hover {
+    color: #E41F7B;
+}
+input {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #E41F7B;
+    border-radius: 25px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+/* Je sélectionne uniquement les champs de type submit */
+input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    border: 2px solid #E41F7B;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+}
+/* Au survol */
+input[type="submit"]:hover {
+    width: 200px;
+    height: 40px;
+    border: 2px solid #E41F7B;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #E41F7B;
+}
+
+/* Style pour la barre de navigation */
+#navigation {
+    background-color: #E41F7B;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    padding-left: 1000px;
+    border-radius: 5px;
+}
+#navigation a {
+    font-weight: bolder;
+    font-size: 15px;
+}
+#navigation a:hover {
+    color: #000000;
+    opacity: 80%;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/* Bloc principale page d’acceuil */
+#main-bloc {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+}
+/* Bloc de présentation de la page d’acceuil */
+.bloc-presentation {
+    position: relative;
+    top: 100px;
+}
+.bloc-presentation h1{
+    font-weight: 1200px;
+    font-size: 35px;
+}
+.bloc-presentation a[id="btn-connexion"] {
+    border: 2px solid #E41F7B;
+    border-radius: 15px;
+    padding: 5px;
+    height: 80px;
+    width: 500px;
+}
+
+.bloc-presentation a[id="btn-connexion"]:hover {
+    border: 2px solid #E41F7B;
+    background-color: #ffffff;
+    color: #E41F7B;
+    border-radius: 15px;
+    padding: 5px;
+    height: 80px;
+    width: 500px;
+}
+
+.bloc-presentation div {
+    margin-top: 50px;
+}
+
+/* Bloc du formulaire */
+#bloc-formulaire {
+    position: absolute;
+    top: 130px;
+    left: 870px;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    padding-top: 60px;
+    gap: 10px;
+    height: 400px;
+    border-radius: 5px;
+}
+.bloc-form {
+    position: absolute;
+    top: 130px;
+    left: 870px;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    padding-top: 60px;
+    gap: 10px;
+    height: 400px;
+    border-radius: 5px;
+}
+.message {
+    background-color: #ffffff;
+    color: #000000;
+    border: 5px solid #E41F7B;
+    border-radius: 25px;
+    position: relative;
+    left: 480px;
+    padding: 20px;
+    top: 20px;
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
+.message a {
+    color: #050505;
+    border: 2px solid #E41F7B;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px;
+    height: 80px;
+}
+.qrCode:hover {
+    border: 3px solid #E41F7B;
+}
+    </style>
+</head>
+<body>
+    <nav >
+        <div id="navigation">
+            <div><a href="/pageAcceuil">Acceuil</a></div>
+            <div><a href="/historique">Historique</a></div>            
+            <div><a href="/inscription">Inscription</a></div>
+        </div>
+    </nav>

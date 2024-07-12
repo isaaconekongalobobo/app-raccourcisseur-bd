@@ -1,0 +1,28 @@
+<%- include ("../partials/head") %>
+<div id="main-bloc">
+    <div id="bloc-connexion">
+        <div id="titrePageConnexion"><h1>Connectez-vous </h1></div>
+        <div class="bloc-form" id="blocFormConnexio">
+            <form  method="post" id="formConnexion">
+                <div>
+                    <div class="bloc-champs"><label for="email">E-mail</label></div>
+                    <input type="email" name="email" id="email" >
+                </div>
+                <div>
+                    <div class="bloc-champs">
+                       <label for="mdp">Mot de Passe</label> 
+                    </div>
+                    <input type="password" name="mdp" id="mdp" >
+                </div>
+                <div>
+                    <input type="submit" value="Se connecter">
+                </div>
+                <a href="/inscription">Vous n’avez pas un compte?</a>
+            </form>
+        </div>
+        
+    </div>   
+</div>
+
+
+<%- include ("../partials/footer") %>

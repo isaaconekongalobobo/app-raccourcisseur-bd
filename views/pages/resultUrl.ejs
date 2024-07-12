@@ -1,0 +1,34 @@
+<%- include ("../partials/head") %>
+<div id="main-bloc">
+    <div id="bloc-presentation">
+        <h1>Merci d’avoir utilisé nos services!</h1>
+        <h4>Vous pouvez copier l’URL genérée ou télécharger le QR code en cliquant sur le bouton ci-dessous</h4>
+        <a href="<%= qrCode %>" download id="btn-downloadQr">Télécharger le QR code</a>
+        <!-- <div>
+            <a href="/inscription">Vous n’avez pas un compte?</a>
+        </div> -->
+    </div>
+    <div id="bloc-formulaire">
+        <form method="post" id="formUrl">
+            <div class="bloc-champs" id="blocResult">
+                <div><label for="urlLong">Voici le résultat de votre requette</label></div>
+                <!-- Affichage de l’url raccourici -->
+                <div id="affichage-url">
+                    <p> <a target="_blank" href="<%= urlCourt %> "><%= urlCourt %> </a></p>
+                </div>
+                <!-- Affichage du QR code  -->
+                <div id="affichage-qrcode">
+                    <a href="<%= qrCode %>" download>
+                        <img src="<%= qrCode %>" alt="Votre QR code est la!" class="qrCode">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Raccourcir">    
+            </div>
+        </form>
+    </div>    
+</div>
+
+
+<%- include ("../partials/footer") %>

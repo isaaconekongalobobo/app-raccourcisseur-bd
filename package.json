@@ -1,0 +1,22 @@
+{
+  "name": "url-shortener-isaaconekongalobobo",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/l1UJKmZF) # url_shortener",
+  "main": "index.js",
+  "scripts": {
+    "qr": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "pg": "^8.12.0",
+    "qrcode": "^1.5.3",
+    "shefin-tinyurl": "^1.0.0",
+    "tiny-url-generator": "^1.0.1"
+  }
+}
